@@ -40,6 +40,8 @@ with open(os.path.join(base_path, "exploit_surrogate.bin"), "wb") as f:
     f.write(data_surrogate)
 
 
+
+
 # ==========================================
 # 2. BŁĄD BAJTU STARTOWEGO
 # ==========================================
