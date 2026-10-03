@@ -1,0 +1,56 @@
+{
+    "DESIGN_NAME": "top_slave_module",
+    "VERILOG_FILES": [
+        "dir::src/top_slave_module.v",
+        "dir::src/axi_stream_manager/stream_gearbox.v",
+        "dir::src/axi_stream_manager/stream_validator.v",
+        "dir::src/axi_stream_manager/subchar_matcher/subchar_matcher.v",
+        "dir::src/axi_stream_manager/subchar_matcher/wide_comparator.v",
+        "dir::src/axi_stream_manager/hits_fifo.v",
+        "dir::src/axi_lite_manager/axi_lite_registers.v"
+    ],
+    
+    "PDK": "ihp-sg13g2",
+    "STD_CELL_LIBRARY": "sg13g2_stdcell",
+
+    "CLOCK_PERIOD": 10.0,
+    "CLOCK_PORT": "S_AXI_ACLK",
+
+    "OPENROAD_THREADS": 8,
+    "STA_THREADS": 8,
+
+    "FP_SIZING": "relative",
+    "FP_CORE_UTIL": 40,
+    "PL_TARGET_DENSITY_PCT": 50,
+    
+    "SYNTH_STRATEGY": "DELAY 0",
+    "MAX_FANOUT_CONSTRAINT": 8,
+    
+    "RUN_POST_GPL_DESIGN_REPAIR": true,
+    "RUN_POST_GRT_DESIGN_REPAIR": true,
+    "RUN_POST_CTS_RESIZER_TIMING": true,
+    "RUN_POST_GRT_RESIZER_TIMING": true,
+    
+    "PL_RESIZER_HOLD_MAX_BUFFER_PCT": 75,
+    "GRT_RESIZER_HOLD_MAX_BUFFER_PCT": 75,
+    "PL_RESIZER_SETUP_MAX_BUFFER_PCT": 75,
+    "GRT_RESIZER_SETUP_MAX_BUFFER_PCT": 75,
+    
+    "RUN_CTS": true,
+    "RUN_LVS": true,
+    "RUN_ANTENNA_REPAIR": true,
+
+    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "DIODE_ON_PORTS": "in",
+    "GRT_ANTENNA_REPAIR_ITERS": 10,
+    "DRT_ANTENNA_REPAIR_ITERS": 10,
+
+    "RT_MIN_LAYER": "Metal2",
+    "RT_MAX_LAYER": "Metal5",
+
+    "DESIGN_REPAIR_MAX_SLEW_PCT": 0,
+    "GRT_DESIGN_REPAIR_MAX_SLEW_PCT": 0,
+
+    "PNR_SDC_FILE": "dir::my_design.sdc",
+    "SIGNOFF_SDC_FILE": "dir::my_design.sdc"
+}
