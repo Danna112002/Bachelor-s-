@@ -39,7 +39,7 @@ The main objective is to optimize character data processing in systems that nati
 - **Synthesis Flow (LibreLane):** Control files, configurations, and scripts used for automatic synthesis of the design with LibreLane, based on PDK design rules (including IHP SG13G2).
   -  *Note: To keep the repository readable and avoid unnecessarily large files, complete reports and large output files from the physical design process are **not included**.*
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 - **Hardware Description:** Verilog
 - **Verification:** Python, Cocotb framework, digital simulators
